@@ -34,4 +34,43 @@
     text-decoration: none;
     color: $color-5;
   }
+
+  @include responsive-min-width($medium) {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.navigation-desktop {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: visible;
+  margin-top: 1px;
+
+  @include responsive-min-width($medium) {
+    height: auto;
+    width: auto;
+    opacity: 1;
+    visibility: 1;
+  }
+
+  .navigation__link {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-4;
+
+    &:first-child ~ .navigation__link {
+      margin-left: 24px;
+    }
+
+    &:hover {
+      color: $color-1;
+    }
+  }
 }

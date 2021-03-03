@@ -22,9 +22,20 @@ h4,
 h5,
 h6 { font-family: 'DM_Serif_Display' }
 
+.langing-page { margin-top: 80px; }
+
 .container {
   margin-left: 24px;
   margin-right: 24px;
-}
 
-.langing-page { margin-top: 80px; }
+  @include responsive-min-width($medium) {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  @include responsive-min-width($huge) {
+    max-width: 1104px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

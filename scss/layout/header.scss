@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   height: 80px;
-  background-color: $color-5;
+  background-color: $color-6;
   box-shadow: 0 -15px 30px 10px $color-4;
 
   .header_content {
@@ -28,6 +28,13 @@
       0 0 / cover;
 
     &.header__button--active { background: url('../images/icon-close.svg'); }
+
+    @include responsive-min-width($medium) {
+      position: fixed;
+      width: 0;
+      opacity: 0;
+      visibility: hidden;
+    }
   }
 
 }

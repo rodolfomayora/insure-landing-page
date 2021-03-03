@@ -1,9 +1,15 @@
-/* Error: Undefined variable.
+/* Error: Undefined mixin.
  *    ,
- * 10 |     color: $color-5;
- *    |            ^^^^^^^^
+ * 10 | /     @include responsive-min-width($medium) {
+ * 11 | |       font-size: 14px;
+ * 12 | |       font-weight: 700;
+ * 13 | |       letter-spacing: 1px;
+ * 14 | |       line-height: 36px;
+ * 15 | |       padding-right: 25px;
+ * 16 | |       padding-left: 25px;
+ * 17 | \     }
  *    '
- *   scss\components\button.scss 10:12  root stylesheet */
+ *   scss\components\button.scss 10:5  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +19,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 10 \2502      color: $color-5;\d\a    \2502             ^^^^^^^^\a    \2575 \a   scss\\components\\button.scss 10:12  root stylesheet";
+  content: "Error: Undefined mixin.\a    \2577 \a 10 \2502  \250c      @include responsive-min-width($medium) {\a 11 \2502  \2502        font-size: 14px;\a 12 \2502  \2502        font-weight: 700;\a 13 \2502  \2502        letter-spacing: 1px;\a 14 \2502  \2502        line-height: 36px;\a 15 \2502  \2502        padding-right: 25px;\a 16 \2502  \2502        padding-left: 25px;\a 17 \2502  \2514      }\a    \2575 \a   scss\\components\\button.scss 10:5  root stylesheet";
 }

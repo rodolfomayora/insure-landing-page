@@ -1,6 +1,6 @@
 /* Responsive Mixin */
 
-@mixin responsive-from($breakpoint) {
+@mixin responsive-min-width($breakpoint) {
   @media screen and (min-width: $breakpoint) {
     @content;
   }

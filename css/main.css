@@ -447,13 +447,26 @@ h6 {
   font-family: "DM_Serif_Display";
 }
 
+.langing-page {
+  margin-top: 80px;
+}
+
 .container {
   margin-left: 24px;
   margin-right: 24px;
 }
-
-.langing-page {
-  margin-top: 80px;
+@media screen and (min-width: 768px) {
+  .container {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1104px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .header {
@@ -465,7 +478,7 @@ h6 {
   display: flex;
   align-items: center;
   height: 80px;
-  background-color: #fafafa;
+  background-color: white;
   box-shadow: 0 -15px 30px 10px #837d87;
 }
 .header .header_content {
@@ -484,6 +497,14 @@ h6 {
 }
 .header .header__button.header__button--active {
   background: url("../images/icon-close.svg");
+}
+@media screen and (min-width: 768px) {
+  .header .header__button {
+    position: fixed;
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 .navigation {
@@ -516,12 +537,63 @@ h6 {
   text-decoration: none;
   color: #fafafa;
 }
+@media screen and (min-width: 768px) {
+  .navigation {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.navigation-desktop {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: visible;
+  margin-top: 1px;
+}
+@media screen and (min-width: 768px) {
+  .navigation-desktop {
+    height: auto;
+    width: auto;
+    opacity: 1;
+    visibility: 1;
+  }
+}
+.navigation-desktop .navigation__link {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #837d87;
+}
+.navigation-desktop .navigation__link:first-child ~ .navigation__link {
+  margin-left: 24px;
+}
+.navigation-desktop .navigation__link:hover {
+  color: #2d2640;
+}
 
 :root .button-light,
 :root .button-dark {
   display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
   line-height: 52px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  :root .button-light,
+:root .button-dark {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 36px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
 }
 :root .button-light {
   color: #fafafa;

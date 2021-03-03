@@ -2,8 +2,19 @@
   .button-light,
   .button-dark {
     display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
     line-height: 52px;
     text-align: center;
+
+    @include responsive-min-width($medium) {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      line-height: 36px;
+      padding-right: 25px;
+      padding-left: 25px;
+    }
   }
 
   .button-light {
