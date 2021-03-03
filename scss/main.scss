@@ -1,0 +1,23 @@
+@charset 'utf-8';
+
+// 1. vendors (que contiene todos los archivos CSS procedentes de librerías externas y frameworks)
+@import 'vendors/normalize';
+@import 'vendors/icomoon'; 
+
+//2. Base (estilos y variables generales para todo el sitio web)
+@import 'base/typography';
+@import 'base/colors';
+@import 'base/responsive';
+@import 'base/mixins';
+@import 'base/general';
+
+// 3. layout
+@import 'layout/header.scss';
+@import 'layout/navigation.scss';
+@import 'layout/footer';
+
+// 4. components
+@import 'components/button.scss';
+
+// 5. pages - en este caso lo podria llamar landing-sections o sections
+  // home

@@ -1,0 +1,18 @@
+/* Responsive Mixin */
+
+@mixin responsive-from($breakpoint) {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+/*
+  how to use
+  .class {
+    properties...
+
+    @include responsive-from($medium) {
+      responsive properties...
+    }
+  }
+*/
