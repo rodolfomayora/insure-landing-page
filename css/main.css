@@ -447,4 +447,42 @@ h6 {
   font-family: "DM_Serif_Display";
 }
 
+.container {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.langing-page {
+  margin-top: 80px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background-color: #fafafa;
+  box-shadow: 0 -15px 30px 10px #837d87;
+}
+.header .header_content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header__logo {
+  height: 18px;
+}
+.header .header__button {
+  width: 32px;
+  height: 32px;
+  background: url("../images/icon-hamburger.svg") no-repeat 0 0/cover;
+}
+.header .header__button--active {
+  background: url("../images/icon-close.svg");
+}
+
 /*# sourceMappingURL=main.css.map */
