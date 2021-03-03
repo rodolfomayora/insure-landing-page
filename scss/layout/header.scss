@@ -3,6 +3,7 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 10;
   display: flex;
   align-items: center;
   height: 80px;
@@ -25,7 +26,8 @@
       url('../images/icon-hamburger.svg')
       no-repeat
       0 0 / cover;
+
+    &.header__button--active { background: url('../images/icon-close.svg'); }
   }
 
-  .header__button--active { background: url('../images/icon-close.svg'); }
 }

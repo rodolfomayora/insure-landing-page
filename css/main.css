@@ -461,6 +461,7 @@ h6 {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 10;
   display: flex;
   align-items: center;
   height: 80px;
@@ -481,8 +482,62 @@ h6 {
   height: 32px;
   background: url("../images/icon-hamburger.svg") no-repeat 0 0/cover;
 }
-.header .header__button--active {
+.header .header__button.header__button--active {
   background: url("../images/icon-close.svg");
+}
+
+.navigation {
+  position: fixed;
+  z-index: 9;
+  top: 80px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateX(100%);
+  background: #2b272f url("../images/bg-pattern-mobile-nav.svg") scroll no-repeat 0 bottom/contain;
+  will-change: transform;
+  transition: transform 0.4s linear;
+}
+.navigation.navigation--active {
+  transform: translateX(0);
+}
+.navigation .navigation__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 240px;
+  margin-top: 48px;
+}
+.navigation .navigation__link {
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fafafa;
+}
+
+:root .button-light,
+:root .button-dark {
+  display: inline-block;
+  line-height: 52px;
+  text-align: center;
+}
+:root .button-light {
+  color: #fafafa;
+  border: 2px solid #fafafa;
+}
+:root .button-light:hover {
+  background-color: #fafafa;
+  color: #2d2640;
+}
+:root .button-dark {
+  color: #2d2640;
+  border: 2px solid #2d2640;
+}
+:root .button-dark:hover {
+  background-color: #2d2640;
+  color: #fafafa;
 }
 
 /*# sourceMappingURL=main.css.map */
