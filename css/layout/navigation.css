@@ -1,6 +1,6 @@
 /* Error: Undefined variable.
  *    ,
- * 10 |     $color-3
+ * 10 |     $color-1
  *    |     ^^^^^^^^
  *    '
  *   scss\layout\navigation.scss 10:5  root stylesheet */
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 10 \2502      $color-3\d\a    \2502      ^^^^^^^^\a    \2575 \a   scss\\layout\\navigation.scss 10:5  root stylesheet";
+  content: "Error: Undefined variable.\a    \2577 \a 10 \2502      $color-1\d\a    \2502      ^^^^^^^^\a    \2575 \a   scss\\layout\\navigation.scss 10:5  root stylesheet";
 }
