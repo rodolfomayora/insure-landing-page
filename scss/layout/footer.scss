@@ -1,0 +1,118 @@
+.footer {
+  background:
+    $color-5
+    url('../images/bg-pattern-footer-mobile.svg')
+    scroll
+    no-repeat
+    0 top / 375px;
+
+  .footer__top { height: 202px; }
+
+  .footer__top-content {
+    position: relative;
+    height: 100%;
+    padding-top: 88px;
+    padding-bottom: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $color-7;
+  }
+
+  .footer__logo {
+    height: 18px;
+  }
+
+  .social-link {
+    text-decoration: none;
+    font-size: 24px;
+
+    &:first-child ~ .social-link { margin-left: 12px; }
+
+    &:hover:before { color: $color-1; }
+  }
+
+  .facebook:before {
+    content: "\e903";
+    color: $color-4;
+  }
+
+  .instagram:before {
+    content: "\e906";
+    color: $color-4;
+  }
+
+  .pinterest:before {
+    content: "\e907";
+    color: $color-4;
+  }
+
+  .twitter:before {
+    content: "\e908";
+    color: $color-4;
+  }
+
+  .footer__bottom {
+    padding-top: 4px;
+    padding-bottom: 86px;
+  }
+
+  .footer__bottom-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__label,
+  .footer__link {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .footer__label {
+    padding-top: 38px;
+    padding-bottom: 36px;
+    color: $color-4;
+  }
+
+  .footer__link {
+    text-decoration: none;
+    color: $color-1;
+
+    &:first-of-type ~ .footer__link { margin-top: 15px; }
+
+    &:hover { text-decoration: underline; }
+  }
+
+  @include responsive-min-width($medium) {
+    background-image: url('../images/bg-pattern-footer-desktop.svg');
+    background-size: 530px;
+
+    .footer__top { height: 130px; }
+
+    .footer__top-content {
+      flex-direction: row;
+      padding-top: 22px;
+      padding-bottom: 0;
+    }
+
+    .footer__social-links { margin-bottom: -4px;}
+
+    .footer__bottom { padding-bottom: 60px; }
+    
+    .footer__bottom-content { flex-direction: row; }
+    
+    .footer__block {
+      flex-grow: 1;
+      align-items: flex-start;
+    }
+  }
+}

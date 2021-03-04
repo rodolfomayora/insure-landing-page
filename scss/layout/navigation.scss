@@ -50,13 +50,6 @@
   visibility: visible;
   margin-top: 1px;
 
-  @include responsive-min-width($medium) {
-    height: auto;
-    width: auto;
-    opacity: 1;
-    visibility: 1;
-  }
-
   .navigation__link {
     font-size: 14px;
     font-weight: 700;
@@ -72,5 +65,12 @@
     &:hover {
       color: $color-1;
     }
+  }
+
+  @include responsive-min-width($medium) {
+    height: auto;
+    width: auto;
+    opacity: 1;
+    visibility: 1;
   }
 }
