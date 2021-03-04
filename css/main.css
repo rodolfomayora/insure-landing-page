@@ -698,6 +698,34 @@ figure {
   }
 }
 
+/* Atribution
+=================================== */
+.attribution {
+  padding-top: 8px;
+  padding-bottom: 4px;
+  font-size: 11px;
+  text-align: center;
+  color: white;
+  background-color: #3e52a3;
+}
+
+.attribution a {
+  color: white;
+  line-height: 16px;
+}
+
+.attribution a:after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: url("../images/external-link.svg") scroll no-repeat center/cover;
+}
+
+.attribution a:hover {
+  color: #999999;
+}
+
 :root .button-light,
 :root .button-dark {
   display: inline-block;

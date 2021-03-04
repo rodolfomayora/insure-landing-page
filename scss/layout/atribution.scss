@@ -1,0 +1,33 @@
+
+/* Atribution
+=================================== */
+.attribution {
+  padding-top: 8px;
+  padding-bottom: 4px;
+  font-size: 11px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+
+  background-color: hsl(228, 45%, 44%);
+}
+
+.attribution a {
+  color: hsl(0, 0%, 100%);
+  line-height: 16px;
+}
+
+.attribution a:after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background:
+  url("../images/external-link.svg")
+  scroll
+  no-repeat
+  center / cover;
+}
+
+.attribution a:hover {
+  color: hsl(0, 0%, 60%);;
+}
