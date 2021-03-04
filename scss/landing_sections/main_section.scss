@@ -1,4 +1,5 @@
 .main-section {
+  margin-bottom: 136px;
   background-color: $color-1;
 
   .main-section__intro-image-mobile {
@@ -126,8 +127,9 @@
 
       &:before {
         content: '';
-        height: 1px;
+        display: inline-block;
         width: 150px;
+        height: 1px;
         background-color: $color-5;
       }
     }
@@ -166,6 +168,8 @@
   }
 
   @include responsive-min-width($large) {
+    margin-bottom: 280px;
+
     .main-section__content { margin-top: -14px; }
 
     .main-section__intro-image-desktop {
@@ -175,6 +179,8 @@
   } 
 
   @include responsive-min-width($huge) {
+    margin-bottom: 300px;
+
     .main-section__title {
       font-size: 70px;
       line-height: 66px;

@@ -51,6 +51,7 @@
 }
 
 .navigation-desktop {
+  position: fixed;
   width: 0;
   height: 0;
   opacity: 0;
@@ -75,6 +76,7 @@
   }
 
   @include responsive-min-width($medium) {
+    position: static;
     height: auto;
     width: auto;
     opacity: 1;
