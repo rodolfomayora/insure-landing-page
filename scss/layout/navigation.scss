@@ -33,7 +33,14 @@
     text-transform: uppercase;
     text-decoration: none;
     color: $color-5;
+
+    &.navigation_button {
+      font-size: 20px;
+      line-height: 52px;
+    }
   }
+
+  
 
   @include responsive-min-width($medium) {
     width: 0;

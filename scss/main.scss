@@ -11,7 +11,7 @@
 @import 'base/mixins';
 @import 'base/general';
 
-// 3. layout
+// 3. Layout
 @import 'layout/header.scss';
 @import 'layout/navigation.scss';
 @import 'layout/footer';
@@ -19,5 +19,7 @@
 // 4. components
 @import 'components/button.scss';
 
-// 5. pages - en este caso lo podria llamar landing-sections o sections
-  // home
+// 5. Landing Sections (es una simple landing page)
+@import 'landing_sections/main_section.scss';
+@import 'landing_sections/features.scss';
+@import 'landing_sections/banner.scss';
