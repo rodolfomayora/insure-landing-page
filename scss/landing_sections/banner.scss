@@ -1,0 +1,44 @@
+.banner-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 346px;
+  margin-bottom: 140px;
+  background:
+    $color-1
+    url('../images/bg-pattern-how-we-work-mobile.svg')
+    scroll
+    no-repeat
+    right top;
+
+  .banner-section__title {
+    max-width: 300px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 42px;
+    color: $color-5;
+  }
+
+  .banner-section__button { text-decoration: none; }
+
+  @include responsive-min-width($large) {
+    height: 250px;
+    flex-direction: row;
+    padding-right: 84px;
+    padding-left: 84px;
+    justify-content: space-between;
+    background-image:
+      url('../images/bg-pattern-how-we-work-desktop.svg');
+
+    .banner-section__title  {
+      max-width: 480px;
+      margin-bottom: 0;
+      font-size: 54px;
+      line-height: 50px;
+      text-align: left;
+    }
+  }
+}

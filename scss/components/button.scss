@@ -1,0 +1,39 @@
+:root {
+  .button-light,
+  .button-dark {
+    display: inline-block;
+    padding-right: 28px;
+    padding-left: 28px;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.4px;
+    line-height: 36px;
+
+    @include responsive-min-width($medium) {
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+
+  .button-light {
+    color: $color-5;
+    border: 2px solid $color-5;
+
+    &:hover {
+      background-color: $color-5;
+      color: $color-1;
+    }
+  }
+
+  .button-dark {
+    color: $color-1;
+    border: 2px solid $color-1;
+
+    &:hover {
+      background-color: $color-1;
+      color: $color-5;
+    }
+  }
+}

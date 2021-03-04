@@ -1,0 +1,50 @@
+/* General
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  outline: 0;
+}
+
+html {
+  font-size: 16px;
+  color: $color-1;
+}
+
+body { font-family: 'Karla', 'Icomoon', Arial, Helvetica, sans-serif;}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { font-family: 'DM_Serif_Display' }
+
+img,
+figure {
+  max-width: 100%;
+  height: auto;
+}
+
+.landing-page {
+  margin-top: 80px;
+  min-height: calc(100vh - 80px);
+}
+
+.container {
+  margin-left: 24px;
+  margin-right: 24px;
+
+  @include responsive-min-width($medium) {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  @include responsive-min-width($huge) {
+    max-width: 1106px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

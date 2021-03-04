@@ -1,0 +1,19 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 14 | /     @include responsive-min-width($medium) {
+ * 15 | |       font-size: 14px;
+ * 16 | |       font-weight: 700;
+ * 17 | \     }
+ *    '
+ *   scss\components\button.scss 14:5  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 14 \2502  \250c      @include responsive-min-width($medium) {\a 15 \2502  \2502        font-size: 14px;\a 16 \2502  \2502        font-weight: 700;\a 17 \2502  \2514      }\a    \2575 \a   scss\\components\\button.scss 14:5  root stylesheet";
+}
